@@ -2,4 +2,5 @@
 *.ply
 .vscode
 build
-
+data
+*.bin

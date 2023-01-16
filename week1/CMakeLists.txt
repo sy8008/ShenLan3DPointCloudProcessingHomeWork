@@ -8,5 +8,7 @@ ADD_DEFINITIONS( ${PCL_DEFINITIONS} )
 
 include_directories(${PCL_INCLUDE_DIRS} ${Boost_INCLUDE_DIRS} ${Eigen_INCLUDE_DIRS})
 add_executable(normal_estimater src/normal_estimate.cpp)
+add_executable(voxel_downsampler src/voxel_downsample.cpp)
 
 target_link_libraries(normal_estimater ${PCL_LIBRARIES} ${Boost_LIBRARIES} Eigen3::Eigen)
+target_link_libraries(voxel_downsampler ${PCL_LIBRARIES} ${Boost_LIBRARIES} Eigen3::Eigen)
